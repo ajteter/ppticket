@@ -134,3 +134,24 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# ===== 操作系统 / 编辑器 =====
+.DS_Store            # macOS 隐藏文件
+*.swp
+.idea/               # JetBrains
+.vscode/             # VS Code（团队共享设置就别忽略）
+
+# ===== 依赖 / 构建产物 =====
+node_modules/        # 云函数依赖
+miniprogram_npm/     # 小程序 npm 构建产物
+dist/
+build/
+
+# ===== 微信开发者工具 =====
+project.private.config.json   # 含本机私有配置，绝不提交
+*.log
+
+# ===== 密钥 / 本地配置 =====
+.env
+.env.local
+config.local.js
